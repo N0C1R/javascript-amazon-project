@@ -55,7 +55,6 @@ export function calculateCartQuantity() {
   cart.forEach((cartItem) => {
     cartQuantity += cartItem.quantity;
   });
-
-  document.querySelector('.js-cart-quantity')
-    .innerHTML = cartQuantity;
+  
+  return cartQuantity;
 }
